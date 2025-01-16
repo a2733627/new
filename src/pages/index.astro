@@ -1,0 +1,21 @@
+---
+import Avatar from '../components/Avatar.astro';
+import Details from '../components/Details.astro';
+import Socials from '../components/Socials.astro';
+import Layout from '../layouts/Layout.astro';
+import Fingerprint from '../components/Fingerprint.astro';
+
+/**
+ * Replace the values below with your own information
+ */
+const title = 'The Pixel Hunter Studio';
+const siteName = `Rolando Haber Jr.'s Portfolio`;
+const siteDescription = 'Showcasing work and project, but mainly myself';
+---
+
+<Layout title={title} siteName={siteName} siteDescription={siteDescription}>
+	<Avatar />
+	<Details />
+	<Socials />
+</Layout>
+<Fingerprint />

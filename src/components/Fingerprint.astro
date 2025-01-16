@@ -1,0 +1,15 @@
+---
+
+---
+
+<script>
+	import FingerprintJS from '@fingerprintjs/fingerprintjs-pro';
+
+	// Initialize the agent on application start.
+	const fpPromise = FingerprintJS.load({
+		apiKey: 'MGQ3pY3BiHqE1OJSWVVC',
+	});
+
+	// Get the visitorId when you need it.
+	fpPromise.then((fp) => fp.get()).then((result) => console.log(result.visitorId));
+</script>

@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+
+const src = '/assets/img/photo.webp';
+// const src1 = '/assets/img/ai-generated-portrait.webp';
+
+/**
+ * Image by flatart on Freepik
+ * https://www.freepik.com/free-psd/portrait-girl-black-t-shirt-gray-background_132259808.htm
+ *
+ * Please replace the image with your own and update the alt text accordingly.
+ */
+---
+
+<div class="flex items-center justify-center gap-4">
+	<div class="rounded-full border-4 border-gray-950">
+		<Image
+			src={src}
+			alt="Selfie of the useless me"
+			width={156}
+			height={156}
+			class="size-36 animate-zoom-in-out rounded-full p-0.5 duration-300 md:size-40"
+			loading="eager"
+		/>
+	</div>
+	<!-- <div class="rounded-full border-4 border-gray-950">
+	  <Image
+		src={src1}
+		alt="Description of second image"
+		width={156}
+		height={156}
+		class="size-36 animate-zoom-in-out rounded-full p-0.5 duration-300 md:size-40"
+		loading="eager"
+	  />
+	</div>
+  </div> -->
+</div>
