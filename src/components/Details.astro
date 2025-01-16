@@ -2,13 +2,11 @@
 /**
  * Update the details below to match your personal information
  */
-
 enum DetailType {
 	title = 'title',
 	subtitle = 'subtitle',
 	description = 'description',
 }
-
 const descriptions = [
 	'Steaming pile of turd disguised as a human being 💩',
 	'Dreamed high, could only get so far',
@@ -103,7 +101,6 @@ const descriptions = [
 	`I'm the kind of person who’d forget their own name if it wasn’t written down. 📝`,
 	`If I were any more useless, I’d be a leftover potato. 🥔`,
 ];
-
 const details: {
 	type: DetailType;
 	content: string;
@@ -117,7 +114,6 @@ const details: {
 		content: descriptions[Math.floor(Math.random() * descriptions.length)],
 	},
 ];
-
 const getClass = (type: DetailType) => {
 	switch (type) {
 		case DetailType.title:
