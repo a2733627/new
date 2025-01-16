@@ -133,3 +133,24 @@ const getClass = (type: DetailType) => {
 <div class="grid grid-cols-1 place-content-center place-items-center gap-5">
 	{details.map((detail) => <p class={getClass(detail.type)}>{detail.content}</p>)}
 </div>
+
+<script>
+	const descriptions = [
+		'Steaming pile of turd disguised as a human being 💩',
+		'Dreamed high, could only get so far',
+	];
+
+	function updateDescription() {
+		const descriptionElement = document.querySelector('.description');
+		if (descriptionElement) {
+			const randomIndex = Math.floor(Math.random() * descriptions.length);
+			descriptionElement.textContent = descriptions[randomIndex];
+		}
+	}
+
+	// Update description on initial page load
+	document.addEventListener('DOMContentLoaded', updateDescription);
+
+	// Update description on subsequent navigations if using Astro's view transitions
+	document.addEventListener('astro:page-load', updateDescription);
+</script>
