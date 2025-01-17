@@ -14,7 +14,7 @@ enum Type {
 	Discord = 'Discord',
 	Threads = 'Threads',
 	instagram = 'Instagram',
-	// email = 'Email',
+	email = 'Email',
 	// titok = 'TikTok',
 }
 
@@ -37,12 +37,12 @@ const socials = [
 		icon: 'assets/svg/icons/instagram.svg',
 		color: 'bg-yellow-400',
 	},
-	// {
-	// 	name: Type.email,
-	// 	url: 'rollhaber@gmail.com',
-	// 	icon: 'assets/svg/icons/email.svg',
-	// 	color: 'bg-lime-400',
-	// },
+	{
+		name: Type.email,
+		url: 'rollhaber@gmail.com',
+		icon: 'assets/svg/icons/email.svg',
+		color: 'bg-lime-400',
+	},
 	// {
 	// 	name: Type.linkedIn,
 	// 	url: 'https://www.linkedin.com/in/xxx',
@@ -65,7 +65,7 @@ const getClass = (type: Type) =>
 ---
 
 <div class="grid grid-cols-3 gap-3 duration-500 md:grid-flow-col md:gap-2">
-	<!-- {
+	{
 		socials.map((social) => {
 			const href = social.name === Type.email ? `mailto:${social.url}` : social.url;
 			return (
@@ -80,5 +80,5 @@ const getClass = (type: Type) =>
 				</a>
 			);
 		})
-	} -->
+	}
 </div>
